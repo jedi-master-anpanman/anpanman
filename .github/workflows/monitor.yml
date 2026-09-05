@@ -5,7 +5,7 @@ name: okura-anpanman-monitor
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # 10分おき(UTC基準)。混雑時は多少ずれます。
+    - cron: "7,17,27,37,47,57 * * * *"   # 10分おき(UTC基準)。混雑時は多少ずれます。
   workflow_dispatch:          # 手動実行ボタンも有効化
 
 # 状態ファイル(okura_state.json)をリポジトリに書き戻すための書き込み権限
